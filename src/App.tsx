@@ -25,7 +25,8 @@ function App() {
                 <div className={styles.content}>
                     Здесь будут кроссовки
                     <Routes>
-                        <Route path="/" element={<PageOne/>}/>
+                        <Route path="/" element={<Navigate to={"/page-one"}/>}/>
+                        <Route path="/page-one" element={<PageOne/>}/>
                         <Route path="/page-two" element={<PageTwo/>}/>
                         <Route path="/page-three" element={<PageThree/>}/>
                         <Route path="/error404" element={<Error404/>}/>
