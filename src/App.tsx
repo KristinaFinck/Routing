@@ -16,9 +16,18 @@ function App() {
                     Здесь будет навигация
                     <nav>
                         <ul>
-                            <li><NavLink to="/page-one">Page One</NavLink></li>
-                            <li><NavLink to="/page-two">Page Two</NavLink></li>
-                            <li><NavLink to="/page-three">Page Three</NavLink></li>
+                            <li><NavLink to="/page-one"
+                                         className={({ isActive}) => isActive ? styles.linkActive : styles.navlink}>
+                                Page One
+                            </NavLink></li>
+                            <li><NavLink to="/page-two"
+
+                                         className={({ isActive}) => isActive ? styles.linkActive : styles.navlink}>
+                                Page Two
+                            </NavLink></li>
+                            <li><NavLink to="/page-three"
+                                         className={({ isActive}) => isActive ? styles.linkActive : styles.navlink}>
+                                Page Three</NavLink></li>
                         </ul>
                     </nav>
                 </div>
