@@ -3,7 +3,7 @@ import styles from "./components/Site.module.css";
 import {PageOne} from "./components/pages/PageOne";
 import {PageTwo} from "./components/pages/PageTwo";
 import {PageThree} from "./components/pages/PageThree";
-import {Link, Navigate, Route, Routes} from "react-router-dom";
+import {Link, Navigate, NavLink, Route, Routes} from "react-router-dom";
 import {Error404} from "./components/pages/Error404";
 
 
@@ -16,9 +16,9 @@ function App() {
                     Здесь будет навигация
                     <nav>
                         <ul>
-                            <li><Link to="/page-one">Page One</Link></li>
-                            <li><Link to="/page-two">Page Two</Link></li>
-                            <li><Link to="/page-three">Page Three</Link></li>
+                            <li><NavLink to="/page-one">Page One</NavLink></li>
+                            <li><NavLink to="/page-two">Page Two</NavLink></li>
+                            <li><NavLink to="/page-three">Page Three</NavLink></li>
                         </ul>
                     </nav>
                 </div>
