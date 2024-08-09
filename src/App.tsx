@@ -9,6 +9,12 @@ import styled from 'styled-components'
 import {s} from './components/pages/_styles'
 
 function App() {
+    const PATH = {
+        PAGE1: '/page1',
+        PAGE2: '/page2',
+        PAGE3: '/page3',
+        ERROR: '/error404'
+    }
     return (
         <div>
 
@@ -16,24 +22,24 @@ function App() {
             <s.Body>
                 <s.Nav>
                     Здесь будет навигация
-                    <s.NavWrapper><NavLink to="/page-one">
+                    <s.NavWrapper><NavLink to={PATH.PAGE1}>
                                 Page One
                         </NavLink></s.NavWrapper>
-                    <s.NavWrapper><NavLink to="/page-two">
+                    <s.NavWrapper><NavLink to={PATH.PAGE2}>
                                 Page Two
                     </NavLink></s.NavWrapper>
-                            <s.NavWrapper><NavLink to="/page-three">
+                            <s.NavWrapper><NavLink to={PATH.PAGE3}>
                                 Page Three</NavLink></s.NavWrapper>
                 </s.Nav>
                 <s.Content>
                     Здесь будут кроссовки
                     <Routes>
-                        <Route path="/" element={<Navigate to={"/page-one"}/>}/>
-                        <Route path="/page-one" element={<PageOne/>}/>
-                        <Route path="/page-two" element={<PageTwo/>}/>
-                        <Route path="/page-three" element={<PageThree/>}/>
-                        <Route path="/error404" element={<Error404/>}/>
-                        <Route path = "/*" element={<Navigate to={"/error404"}/>} />
+                        <Route path="/" element={<Navigate to={PATH.PAGE1}/>}/>
+                        <Route path={PATH.PAGE1} element={<PageOne/>}/>
+                        <Route path={PATH.PAGE2} element={<PageTwo/>}/>
+                        <Route path={PATH.PAGE3} element={<PageThree/>}/>
+                        <Route path={PATH.ERROR} element={<Error404/>}/>
+                        <Route path = "/*" element={<Navigate to={PATH.ERROR}/>} />
                     </Routes>
 
                 </s.Content>/
