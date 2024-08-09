@@ -5,33 +5,27 @@ import {PageTwo} from "./components/pages/PageTwo";
 import {PageThree} from "./components/pages/PageThree";
 import {Link, Navigate, NavLink, Route, Routes} from "react-router-dom";
 import {Error404} from "./components/pages/Error404";
-
+import styled from 'styled-components'
+import {s} from './components/pages/_styles'
 
 function App() {
     return (
         <div>
-            <div className={styles.header}><h1>HEADER</h1></div>
-            <div className={styles.body}>
-                <div className={styles.nav}>
-                    Здесь будет навигация
-                    <nav>
-                        <ul>
-                            <li><NavLink to="/page-one"
-                                         className={({ isActive}) => isActive ? styles.linkActive : styles.navlink}>
-                                Page One
-                            </NavLink></li>
-                            <li><NavLink to="/page-two"
 
-                                         className={({ isActive}) => isActive ? styles.linkActive : styles.navlink}>
+            <s.Header>Header</s.Header>
+            <s.Body>
+                <s.Nav>
+                    Здесь будет навигация
+                    <s.NavWrapper><NavLink to="/page-one">
+                                Page One
+                        </NavLink></s.NavWrapper>
+                    <s.NavWrapper><NavLink to="/page-two">
                                 Page Two
-                            </NavLink></li>
-                            <li><NavLink to="/page-three"
-                                         className={({ isActive}) => isActive ? styles.linkActive : styles.navlink}>
-                                Page Three</NavLink></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div className={styles.content}>
+                    </NavLink></s.NavWrapper>
+                            <s.NavWrapper><NavLink to="/page-three">
+                                Page Three</NavLink></s.NavWrapper>
+                </s.Nav>
+                <s.Content>
                     Здесь будут кроссовки
                     <Routes>
                         <Route path="/" element={<Navigate to={"/page-one"}/>}/>
@@ -42,9 +36,9 @@ function App() {
                         <Route path = "/*" element={<Navigate to={"/error404"}/>} />
                     </Routes>
 
-                </div>/
-            </div>
-            <div className={styles.footer}>abibas 2023</div>
+                </s.Content>/
+            </s.Body>
+            <s.Footer>abibas 2023</s.Footer>
         </div>
 
     );
