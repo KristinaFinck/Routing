@@ -27,16 +27,25 @@ display: flex;
   flex-wrap: nowrap;
   height: 20vh;
   
-  & > div {
+  & > a {
     align-self: stretch; /* Растягиваем каждый div по высоте */
   }
-  & > div > img {
+  & > a > img {
     height: 100%;
     width: 100%;
     object-fit: contain;
   }
 `
-
+const ModelWrapper = styled.div`
+  text-align: center;
+  
+  & > span{
+    text-align: center;
+  }
+  & > img {
+    width: 70%;
+  }
+`
 export const S={
-    NavWrapper, ImagesWrapper
+    NavWrapper, ImagesWrapper, ModelWrapper
   }
