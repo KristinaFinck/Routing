@@ -7,14 +7,14 @@ import adidasModel3
 import {S} from './_styles'
 import {Link} from "react-router-dom";
 
-export type AdidasItem = {
+export type AdidasItemType = {
     id: number;
     model: string;
     collection: string;
     price: string;
     picture: string;
 }
-export const adidasArr: AdidasItem[] = [
+export const adidasArr: AdidasItemType[] = [
     {
         id: 1,
         model: 'ADIDAS ADIFOM TRXN',
