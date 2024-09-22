@@ -37,6 +37,7 @@ function App() {
 
 
                         <Route path={'/*'} element={<Error404/>}/>
+                        <Route path={'/adidas/*'} element={<Error404/>}/>
                     </Routes>
                 </div>
             </div>
