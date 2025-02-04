@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navigate, NavLink, Route, Routes} from 'react-router-dom';
+import {Navigate, NavLink, Route, Routes, Outlet} from 'react-router-dom';
 import {Error404} from "./components/pages/Error404";
 import {Adidas} from "./components/pages/Adidas";
 import {Puma} from "./components/pages/Puma";
@@ -30,19 +30,20 @@ function App() {
 
                 </div>
                 <div className={styles.content}>
-                    <Routes>
-                        <Route path={'/'} element={<Navigate to={'/adidas'}/>}/>
+                    <Outlet />
+                    {/*<Routes>*/}
+                    {/*    <Route path={'/'} element={<Navigate to={'/adidas'}/>}/>*/}
 
-                        <Route path={PATH.PAGE1} element={<Adidas/>}/>
-                        <Route path={PATH.PAGE2} element={<Puma/>}/>
-                        <Route path={PATH.PAGE3} element={<Abibas/>}/>
-                        <Route path={PATH.PAGE_PRISES} element={<Prices/>} />
-                        <Route path={'/:model/:id'} element={<Model/>}/>
+                    {/*    <Route path={PATH.PAGE1} element={<Adidas/>}/>*/}
+                    {/*    <Route path={PATH.PAGE2} element={<Puma/>}/>*/}
+                    {/*    <Route path={PATH.PAGE3} element={<Abibas/>}/>*/}
+                    {/*    <Route path={PATH.PAGE_PRISES} element={<Prices/>} />*/}
+                    {/*    <Route path={'/:model/:id'} element={<Model/>}/>*/}
 
 
-                        <Route path={'/*'} element={<Error404/>}/>
-                        <Route path={'/model/*'} element={<Error404/>}/>
-                    </Routes>
+                    {/*    <Route path={'/*'} element={<Error404/>}/>*/}
+                    {/*    <Route path={'/model/*'} element={<Error404/>}/>*/}
+                    {/*</Routes>*/}
                 </div>
             </div>
             <div className={styles.footer}>abibas 2023</div>
