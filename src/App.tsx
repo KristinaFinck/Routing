@@ -1,21 +1,9 @@
 import React from 'react';
-import {Navigate, NavLink, Route, Routes, Outlet} from 'react-router-dom';
-import {Error404} from "./components/pages/Error404";
-import {Adidas} from "./components/pages/Adidas";
-import {Puma} from "./components/pages/Puma";
-import {Abibas} from "./components/pages/Abibas";
+import {NavLink, Outlet} from 'react-router-dom';
 import styles from "./components/Site.module.css";
 import {S} from './components/pages/_styles';
-import {Model} from "./components/pages/Model";
-import {Prices} from "./components/pages/Prices";
+import {PATH} from './components/routes/router'
 
-
-const PATH = {
-    PAGE1: '/adidas',
-    PAGE2: '/puma',
-    PAGE3: '/abibas',
-    PAGE_PRISES: '/prices'
-} as const;
 
 function App() {
     return (
@@ -23,11 +11,11 @@ function App() {
             <div className={styles.header}><h1>HEADER</h1></div>
             <div className={styles.body}>
                 <div className={styles.nav}>
-                    <S.NavWrapper><NavLink to={PATH.PAGE1}>adidas</NavLink></S.NavWrapper>
-                    <S.NavWrapper><NavLink to={PATH.PAGE2}>puma</NavLink></S.NavWrapper>
-                    <S.NavWrapper><NavLink to={PATH.PAGE3}>abibas</NavLink></S.NavWrapper>
-                    <S.NavWrapper><NavLink to={PATH.PAGE_PRISES}>цены для оптовиков</NavLink></S.NavWrapper>
-
+                    <S.NavWrapper><NavLink to={PATH.ADIDAS}>adidas</NavLink></S.NavWrapper>
+                    <S.NavWrapper><NavLink to={PATH.PUMA}>puma</NavLink></S.NavWrapper>
+                    <S.NavWrapper><NavLink to={PATH.ABIBAS}>abibas</NavLink></S.NavWrapper>
+                    <S.NavWrapper><NavLink to={PATH.PRICES}>цены для оптовиков</NavLink></S.NavWrapper>
+                    <S.NavWrapper><NavLink to={PATH.PROTECTED_PAGE}>ProtectedPage</NavLink></S.NavWrapper>
                 </div>
                 <div className={styles.content}>
                     <Outlet />
