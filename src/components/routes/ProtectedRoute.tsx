@@ -1,6 +1,5 @@
 import {ReactNode} from 'react';
 import {Navigate} from "react-router-dom";
-import {Error404} from "../pages/Error404";
 
 type Props = {
     children: ReactNode
