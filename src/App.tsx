@@ -18,6 +18,10 @@ function App() {
                     <S.NavWrapper><NavLink to={PATH.PROTECTED_PAGE}>ProtectedPage</NavLink></S.NavWrapper>
                 </div>
                 <div className={styles.content}>
+                    <div className = {styles.HorizontalNavigation}>
+                        <NavLink className = {styles.LinkLikeButton} to={PATH.ADIDAS}>Главная страница (ADIDAS)</NavLink>
+                    </div>
+
                     <Outlet />
                 </div>
             </div>
