@@ -28,7 +28,6 @@
     "start:local": "json -I -f package.json -e \"this.homepage='.'\" && yarn start",
     "start:deploy": "json -I -f package.json -e \"this.homepage='https://KristinaFinck.github.io/Routing'\" && yarn start",
     "build": "react-scripts build",
-    "build:deploy": "json -I -f package.json -e \"this.homepage='https://KristinaFinck.github.io/Routing'\" && yarn build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build:deploy",

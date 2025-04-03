@@ -36,4 +36,4 @@ function App() {
 }
 
 export default App;
- //(Add images for Adidas component)
+
