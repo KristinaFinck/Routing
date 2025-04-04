@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Routing/static/css/main.32cdbb4f.css",
-    "main.js": "/Routing/static/js/main.80194fbe.js",
+    "main.js": "/Routing/static/js/main.d0863170.js",
     "static/js/453.fe3f6d29.chunk.js": "/Routing/static/js/453.fe3f6d29.chunk.js",
     "static/media/krossovki-puma-trinity-mid-hybrid-leather-393985-02-3-1000x800.jpg": "/Routing/static/media/krossovki-puma-trinity-mid-hybrid-leather-393985-02-3-1000x800.9f97347aa4aedf5ce8f2.jpg",
     "static/media/kedy-puma-suede-classic-xxi-374915-01-20-1000x800.jpg": "/Routing/static/media/kedy-puma-suede-classic-xxi-374915-01-20-1000x800.5b62a6099201ef0f591c.jpg",
@@ -11,11 +11,11 @@
     "static/media/Superstar_XLG_Shoes_Black_IG9777_01_standard.webp": "/Routing/static/media/Superstar_XLG_Shoes_Black_IG9777_01_standard.bfcb34a2e48044d7f26f.webp",
     "index.html": "/Routing/index.html",
     "main.32cdbb4f.css.map": "/Routing/static/css/main.32cdbb4f.css.map",
-    "main.80194fbe.js.map": "/Routing/static/js/main.80194fbe.js.map",
+    "main.d0863170.js.map": "/Routing/static/js/main.d0863170.js.map",
     "453.fe3f6d29.chunk.js.map": "/Routing/static/js/453.fe3f6d29.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.32cdbb4f.css",
-    "static/js/main.80194fbe.js"
+    "static/js/main.d0863170.js"
   ]
 }
